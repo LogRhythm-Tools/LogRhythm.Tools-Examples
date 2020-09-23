@@ -1,0 +1,10 @@
+NameFirst,NameLast,SamAccountName,Privileged_SamAccountName,SamAccountTrueID,SamAccountTrueIDStatus,PrivilegedTrueID,PrivilegedTrueIDStatus,MergeStatus,MergeNote,MergeDate
+Ferdinand,Francis,Ferdinand.Francis,adm_ffrancis,4806,Active,4806,Active,TRUE,TrueId merge successful.  Merger verified.,[09/23/20 10:53:00]
+Donovan,Wheeler,Donovan.Wheeler,adm_dwheeler,4595,Active,4595,Active,TRUE,TrueId merge successful.  Merger verified.,[09/23/20 10:53:00]
+Darryl,Dawson,Darryl.Dawson,adm_ddawson,10571,Active,10571,Active,TRUE,TrueId merge successful.  Merger verified.,[09/23/20 10:53:01]
+Rachel,Morrison,Rachel.Morrison,adm_rmorrison,21067,Active,21067,Active,TRUE,Identities previously synchronized.  No changes required.,[09/23/20 10:53:02]
+September,Huff,September.Huff,adm_shuff,14658,Active,14658,Active,TRUE,Identities previously synchronized.  No changes required.,[09/23/20 10:53:02]
+Dane,Obrien,Dane.Obrien,adm_dobrien,,,,,FALSE,Duplicate Privileged_SamAccountName's identified.  Privileged_SamAccountName's must be unique.,[09/23/20 10:53:03]
+Tiger,Bernard,Tiger.Bernard,adm_tbernard,10026,Active,,,FALSE,No TrueID record found for the Privileged_SamAccountName,[09/23/20 10:53:03]
+Delly,Obrien,Delly.Obrien,adm_dobrien,,,,,FALSE,Duplicate Privileged_SamAccountName's identified.  Privileged_SamAccountName's must be unique.,[09/23/20 10:53:03]
+Kelly,Ritz,Kelly.Ritz,adm_kritz,,,15882,Active,FALSE,No TrueID record found for the SamAccountName,[09/23/20 10:35:38]
