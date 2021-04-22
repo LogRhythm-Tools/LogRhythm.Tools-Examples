@@ -26,20 +26,28 @@ $LogRhythmListOwner = "LogRhythm Administrator"
 
 ## Examples 
 AD Groups are configured for Synchronization based on establishing a PSCustomObject that contains four key properties.
+
 |Field|Definition|
+|--------------|-------|
 |Name|This name is to help facilitate tracking and management when reviewing the Script Activity log.|
 |InputGroup|This should be set to the name of the Active Directory Group you wish to Sync with LogRhythm Lists|
 |Output_IdentityListName|This should be set to the name of the existing and/or new LogRhythm List name value that will contain TrueIdentity values.  Set to $null when not required.|
 |Output_LoginListName|This should be set to the name of the existing and/or new LogRhythm list name value that will contain SamAccountName login values.  Set to $null when not required.|
 
+
 The second component to defining a new AD Group for synchronization is to add the record created to the SyncList variable.  This is accomplished by:
+```
 $SyncList.Add() 
+```
 
 The Variable Name that contains the definitions containing Name, InputGroup, Output_IdentityListName, and Output_LoginListName is the value that must be included inside the .Add().
+```
 $SyncList.Add($MyADGroupObject)
+```
 
 ### Example 1 - Synchronization Group Configuration
 First define the AD Group for synchronization:
+```
 $ADGSync1 = [PSCustomObject]@{
     # Name is showcased in the audit log outlining what is being processed.  This name is to help facilitate tracking and management. 
     Name = "Friends of TAM"
@@ -53,13 +61,16 @@ $ADGSync1 = [PSCustomObject]@{
     # The Output Login is the output list name that will be created and maintained in LogRhythm with Login values for the input group
     Output_LoginListName = "LogRhythm - Friends of TAM - Login"
 }
+```
 
 Second add the defined group established to the SyncList array:
+```
 $SyncList.add($ADGSync1)
+```
 
 ### Example 2 - CloudAI Monitored Identities
 Here is a more condensed example that showcases synchronizing the members of an AD Group to the existing LogRhythm List for CloudAI membership management.
-
+```
 $ADGSync2 = [PSCustomObject]@{
     Name = "LogRhythm CloudAI Subscribed Users"
     InputGroup = "SG_LR_MonitoredIdentities"
@@ -69,10 +80,12 @@ $ADGSync2 = [PSCustomObject]@{
     Output_LoginListName = $null
 }
 $SyncList.add($ADGSync2)
+```
 
 ### Multiple Groups to LogRhythm Lists
 The Example for Synchronization Group Configuration can be copied as many times as necissary to facilitate synchronization of multiple groups.
 Reference:
+```
 # Group 1
 $ADGSync1 = [PSCustomObject]@{
 	~ Content Cut for Example
@@ -89,7 +102,7 @@ $ADGSync3 = [PSCustomObject]@{
 	~ Content Cut for Example
 }
 $SyncList.add($ADGSync3)
-
+```
 
 ## Sample Output
 Below is a sample output that is provided when executed.  This sample output would be the primary contents contained within the output translog.
