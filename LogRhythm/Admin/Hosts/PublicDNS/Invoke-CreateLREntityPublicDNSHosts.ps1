@@ -1,3 +1,4 @@
+Import-Module LogRhythm.Tools
 $DNSHosts = Import-Csv -Path "C:\Users\eric.TAM\Documents\GitHub\LogRhythm.Tools-Examples\LogRhythm\Admin\Hosts\PublicDNS\PublicDNSServers.csv" -Header "name", "ip1", "ip2" | Select-Object -Skip 1
 
 ForEach($DNSHost in $DNSHosts) {
