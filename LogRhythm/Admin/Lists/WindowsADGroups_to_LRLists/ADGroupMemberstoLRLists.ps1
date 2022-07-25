@@ -81,7 +81,7 @@ if (!$ListOwnerNumber) {
             }
     
             # Populate Identity List
-            $IdentityResults = Get-LrIdentities -Identifier $UserSamAccountName
+            $IdentityResults = Get-LrIdentities -Identifier $UserSamAccountName -Exact
             if ($IdentityResults) {
                 $UserIdentityId = $($IdentityResults | Select-Object -ExpandProperty identityId)
                 ForEach ($UserId in $UserIdentityId) {
