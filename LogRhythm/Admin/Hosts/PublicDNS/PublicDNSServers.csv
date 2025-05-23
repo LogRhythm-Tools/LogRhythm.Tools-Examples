@@ -1,0 +1,20 @@
+Host_Record_Name, identifier_1, identifier_2
+Akamai DNS, 23.216.52.11, 23.216.53.11
+AT&T DNS, 68.94.156.1, 68.94.157.1
+Cisco Umbrella/OpenDNS, 208.67.222.222, 208.67.220.220
+CloudFlare DNS, 1.1.1.1, 1.0.0.1
+Comcast DNS, 68.87.69.146, 68.87.69.146
+Comcast DNS, 68.87.73.242, 68.87.74.162
+Comcast DNS, 68.87.68.162, 68.87.85.98
+Comcast DNS, 68.87.77.130, 68.87.71.226
+Comodo Secure DNS, 8.26.56.26, 8.20.247.20
+Cox Business DNS, 68.105.28.16, 68.105.29.16
+Cox Communications DNS - East Coast, 68.1.16.108
+Cox Communications DNS - Primary, 68.1.116.107
+Cox Communications DNS - West Coast, 68.11.106.68
+Level-3 DNS, 4.2.2.1, 4.2.2.2
+Level-3 DNS, 4.2.2.3, 4.2.2.4
+Level-3 DNS, 209.244.0.3, 209.244.0.4
+NordVPN DNS, 103.86.96.100, 103.86.99.100
+Quad9 DNS, 9.9.9.9, 149.112.112.112
+Google DNS, 8.8.8.8, 8.8.4.4
